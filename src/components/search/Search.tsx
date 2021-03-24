@@ -17,6 +17,7 @@ const Search: React.FC = () => {
         <SubTitleSearch>Nome do personagem</SubTitleSearch>
         <InputSearch
           type="text"
+          data-cy="input-hero"
           placeholder="Search"
           onChange={(e) => setSearch(e.target.value)}
         />

@@ -78,7 +78,7 @@ const Modal = ({ data, onClose, setSelected }: IData) => {
             alt="modal-poster"
           />
         </ModalContentContainer>
-        <ReturnButton onClick={() => setSelected(null)}>
+        <ReturnButton onClick={() => setSelected(null)} data-cy="button">
           <h1>Retornar</h1>
         </ReturnButton>
       </ModalBody>

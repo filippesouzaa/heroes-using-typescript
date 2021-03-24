@@ -55,8 +55,13 @@ const Results = ({ search }: ISearch) => {
           <span>Data</span>
         </TitleResult>
         {currentData.map((item) => (
-          <ResultsBody key={item.id} onClick={() => setSelected(item)}>
+          <ResultsBody
+            key={item.id}
+            onClick={() => setSelected(item)}
+            data-cy="table-heroes"
+          >
             <MovieCover
+              data-cy="item"
               src={`https://image.tmdb.org/t/p/w185${item.poster_path}`}
               alt="poster"
             />
