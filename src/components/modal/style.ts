@@ -3,20 +3,19 @@ import styled from "styled-components";
 export const ModalContainer = styled.div`
   position: fixed;
   z-index: 1;
-  padding-top: 60px;
+  padding-top: 20px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(155, 153, 153, 0.4);
   backdrop-filter: blur(3px);
-  display: grid;
 `;
 
 export const ModalBody = styled.div`
   background-color: #ffff;
   width: 900px;
-  height: 600px;
+  max-height: 90vh;
   margin: 0 auto;
 `;
 
@@ -51,7 +50,7 @@ export const ModalContent = styled.div`
 
 export const PosterImage = styled.img`
   width: 100%;
-  height: 500px;
+  max-height: 500px;
 `;
 export const Title = styled.span`
   font-size: 21px;
@@ -111,7 +110,6 @@ export const MatchTitle = styled.span`
 `;
 
 export const ReturnButton = styled.button`
-  margin-top: 20px;
   width: 100%;
   height: 40px;
   background-color: #166193;
